@@ -101,6 +101,7 @@ p {
   color: var(--color-white);
   padding: 0px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 #navbar.navbar--dark {
   background-color:  var(--color-blue);
