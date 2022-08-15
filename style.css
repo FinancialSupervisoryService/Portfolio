@@ -92,18 +92,29 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
-  top: 0px;
-  position: sticky;
   justify-content: space-between;
-  background-color: var(--color-light-grey);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 0px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+#navbar.navbar--dark {
+  background-color:  var(--color-blue);
+  padding : 4px;
   backdrop-filter: saturate(180%) blur(20px);
   background: rgba(0,0,0,0.5);
 }
 
+/* navbar sticky
+  top: 0px;
+  position: sticky;
+  backdrop-filter: saturate(180%) blur(20px);
+  background: rgba(0,0,0,0.5);
+*/
 .navbar__menu {
   display: flex;
 }
@@ -120,11 +131,11 @@ p {
   cursor: pointer;
   border-radius: var(--size--border-radius);
 }
-/* No home solid white 1px border!!!!
+
 .navbar__menu__item.active {
   border: 1px solid var(--color-white);
 }
-*/
+
 .navbar__menu__item:hover {
   background-color: var(--color-dark-pink);
 }
@@ -143,6 +154,7 @@ p {
 #home {
   background: url("imgs/home-background5.jpg") center/cover no-repeat;
   padding: 40px;
+  padding-top: 100px;
   text-align: center;
 }
 .home__avatar {
