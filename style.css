@@ -105,6 +105,8 @@ p {
 #navbar.navbar--dark {
   background-color:  var(--color-blue);
   padding : 4px;
+  padding-top : 0px;
+  padding-bottom: 0px;
   backdrop-filter: saturate(180%) blur(20px);
   background: rgba(0,0,0,0.5);
 }
