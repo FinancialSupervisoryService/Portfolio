@@ -21,9 +21,20 @@ navbarMenu.addEventListener('click', (event) => {
   const link = target.dataset.link;
   if (link == null) {
     return;
-   }
+  }
+  navbarMenu.classList.remove('open');
+  navbarParent.classList.remove('open');
   scrollIntoView(link);
 });
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+const navbarParent = document.querySelector('#navbar')
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+  navbarParent.classList.toggle('open');
+});
+
 
 // Handle click on "contact me" button on home
 const homeContactBtn = document.querySelector('.home__contact');
@@ -68,6 +79,16 @@ workBtnContainer.addEventListener('click', (e) => {
   return;
 }
 //console.log(filter);
+
+//Remove selection from the previous item and select the new one
+
+ const active = document.querySelector('.category__btn.selected');
+ if (active != null) {
+  active.classList.remove('selected');
+  }
+e.target.classList.add('selected');
+
+
   projectContainer.classList.add('anim-out');
   setTimeout(() => {
     projects.forEach((project) => {
