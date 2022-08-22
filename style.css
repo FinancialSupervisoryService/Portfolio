@@ -157,7 +157,7 @@ p {
 #home {
   background: url("imgs/home-background5.jpg") center/cover no-repeat;
   padding: 40px;
-  padding-top: 100px;
+  padding-top: 210px;
   text-align: center;
   height: 100vh;
 }
@@ -525,6 +525,16 @@ p {
   --font-small: 14px;
   --font-micro: 12px;
   }
+
+  #home {
+    padding-top: 190px;
+  }
+
+  .home__avatar {
+    width: 200px;
+    height: 200px;
+  }  
+
 
   .navbar__toggle-btn {
     display: block;
