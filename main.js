@@ -128,6 +128,7 @@ function clickCounter() {
   console.log(cnt);
   if(cnt == 10) {
     document.getElementById('home__avatar1').src = "imgs/favicon.png";
+    cnt = cnt - 10;
   } else { document.getElementById('home__avatar1').src = "imgs/profile.jpeg"; }
 }
 avatarButton.addEventListener("click", clickCounter);
