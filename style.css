@@ -159,6 +159,7 @@ p {
   padding: 40px;
   padding-top: 100px;
   text-align: center;
+  height: 100vh;
 }
 
 .home__avatar {
@@ -233,8 +234,9 @@ p {
 }
 
 .job {
-  display: flex;
+  display: none;
   align-items: center;
+  /* display: flex; */
 }
 
 .job_description {
