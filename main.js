@@ -120,3 +120,14 @@ e.target.classList.add('selected');
     scrollTo.scrollIntoView({behavior: "smooth"});
  }
 
+
+let cnt = 0;
+const avatarButton = document.querySelector(".home__avatar");
+function clickCounter() {
+  cnt+=1;
+  console.log(cnt);
+  if(cnt == 10) {
+    document.getElementById('home__avatar1').src = "imgs/favicon.png";
+  } else { document.getElementById('home__avatar1').src = "imgs/profile.jpeg"; }
+}
+avatarButton.addEventListener("click", clickCounter);
