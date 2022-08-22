@@ -527,7 +527,7 @@ p {
   }
 
   #home {
-    padding-top: 150px;
+    padding-top: 180px;
   }
 
   .home__avatar {
@@ -545,7 +545,6 @@ p {
   #navbar {
     flex-direction: column;
     align-items:center;
-    margin-top : 5px;
   }
 
   #navbar.open {
